@@ -1,4 +1,3 @@
-#A class that can be used to represent a car.
 class Car:
     '''A simple attempt to represent a car.'''
     def __init__(self,make, model, year):
@@ -6,7 +5,6 @@ class Car:
         self.make = make
         self.model = model 
         self.year = year
-        # Settting a default value for an Attribute
         self.odometer_reading = 0
 
     def get_descriptive_name(self):
@@ -30,34 +28,23 @@ class Car:
         """Add the given amount to the odometer reading."""
         self.odometer_reading += miles
 
-class Battery:
-    '''A simple attempt to model a battery of an electric car.'''
-
-
-    def __init__(self,battery_size=75):
-        '''Intialize the attributes of a battery.'''
-        self.battery_size = battery_size
-
-    def describle_battery(self):
-        '''Print a statement describing the battery size.'''
-        print(f"This car has a  {self.battery_size}-kWh battery.")
-
-    def get_range(self):
-        '''print a statement about the range this battery provides.'''
-        if self.battery_size == 75:
-            range =260
-        elif self.battery_size == 100:
-            range = 315
-
-        print(f"This car can go about {range} miles on a full charge.")
-
-    def upgrade_battery(self,capacity=100):
-        self.battery_size  = capacity
-
 class ElectricCar(Car):
     '''Represent aspect of a car, specific to electric vehicles.'''
     def __init__(self, make, model, year):
         ''''Intialize attributes of the parent class.
         Then intialize attributes specific to an electric car.'''
         super().__init__(make, model, year)
-        self.battery = Battery()
+        self.battery_size = 75
+
+    def describle_battery(self):
+        '''Print a statement describing the battery size.'''
+        print(f"This car has a  {self.battery_size}-kWh battery.")
+
+    def fill_gas_tank(self):
+        ''''Electric cars don't have gas tanks.'''
+        print("This car does not need a gas tank!")
+
+my_tesla =ElectricCar('tesla', 'model s', 2019)
+print(my_tesla.get_descriptive_name())
+my_tesla.describle_battery()
+my_tesla.fill_gas_tank()
