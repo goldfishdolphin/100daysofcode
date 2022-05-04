@@ -7,4 +7,6 @@ for random_number in range(4):
     random_numbers.append(random_number)
 
 print(f"The Winning Ticket:{random_numbers[0]}{random_numbers[1]}{random_numbers[2]}{random_numbers[3]},")
+my_ticket = random_numbers
+print(my_ticket)
 
