@@ -1,5 +1,5 @@
 from random import choice
-list = [10,20,30,40,50,60,70,80,90,99, 'a', 'c', 'y', 'z']
+list = [1,2,3,4,5,6,7,8,9,0, 'a', 'c', 'y', 'z']
 
 random_numbers=[]
 for random_number in range(4):
