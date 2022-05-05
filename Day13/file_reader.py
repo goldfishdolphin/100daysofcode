@@ -9,7 +9,7 @@ with open(filename) as file_object:
         print(line.rstrip())
 
 #Making a list of Lines from a File
-        filename = 'pi_digits.txt'
+filename = 'pi_digits.txt'
 
 with open(filename) as file_object:
     lines = file_object.readlines()
