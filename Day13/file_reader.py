@@ -1,6 +1,8 @@
-with open('text_files/pi_digits.txt') as file_object:
-    contents = file_object.read()   
-print(contents.rstrip())
+from fileinput import filename
 
 
-git init
+filename = 'pi_digits.txt'
+
+with open(filename) as file_object:
+    for line in file_object:
+        print(line)
