@@ -1,6 +1,6 @@
 
 
-#Large Files: One Million Digits
+#Is Your Birthday Contained in Pi?
 filename = 'pi_million_digits.txt'
 
 with open(filename) as file_object:
