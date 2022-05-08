@@ -1,0 +1,4 @@
+In Python you can use variables
+In Python you can print 
+In Python you can make lists
+In Python you can make functions
