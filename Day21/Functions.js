@@ -1,12 +1,12 @@
 function switchCase(string, shouldUpperCase) {
  
-    if (shouldUpperCase === string) {
+    if (shouldUpperCase === 'hi') {
       return string.toUpperCase();
     }
     return string.toLowerCase();
   }
-  console.log(switchCase('hello'))
-  console.log(switchCase('HELLO'))
+  console.log(switchCase('hello', 'hi'))
+  console.log(switchCase('HELLO','hi'))
   
   // Invoke switchCase to generate the following outputs:
   // 'HELLO'
