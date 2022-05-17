@@ -47,9 +47,14 @@ for (let i = 0; i < people.length; i++) {
 
 people[i].age= 2022-people[i].birthYear;
 
-
+if (people[i].age%10===0)
+{
+  people[i].isHavingParty = true;
+}
+else{
+  people[i].isHavingParty = false;
 }
 
-console.log(people);
+console.log(people[i]);}
 // Each person object in the array should be given an age property set to the age they will turn this year (2022)
-// They should also be provided an isHavingParty boolean set to true if their age ends with a 0, and false otherwise
+// They should also be provided an isHavingParty boolean set to true if their age ends with a 0, and false
