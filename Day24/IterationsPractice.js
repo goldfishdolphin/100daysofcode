@@ -1,36 +1,40 @@
-// Declare a for loop to complete all of the following challenges
-for (let i=0; i<=5; i++);
-// 1 - Declare a variable storing your first name in lower case and log each character individually to the console
-const firstName="Naureen"
-for (let i=0; i<firstName.length; i++){
-  let lettersinFirstName =firstName[i].toLowerCase();
-  
-console.log(lettersinFirstName);
+// Study the following for loops and determine what they are designed to achieve
+// You'll need to make an amendment to each one - either the start, stop and step conditions or the logic within the loop body
+// Uncomment each console.log when you're ready to move onto each challenge
+// Be wary of causing an infinite loop!
+
+const greeting = 'hello';
+for (let i = 0; i < greeting.length; i++) {
+  // console.log(i);
+  // Each character in the greeting string should be logged to the console in order
 }
 
-
-// 2 - Create a variable that will eventually hold a capitalised version of your first name variable (consider an appropriate initial value for this)
-
-for (let i=0; i<firstName.length; i++){
-  let lettersinFirstNameCapital =firstName[i].toUpperCase();
-  
-console.log(lettersinFirstNameCapital);
+let shoutedGreeting = '';
+for (let i = greeting.length - 1; i >=0; i--) {
+  shoutedGreeting += greeting[i].toUpperCase();
 }
+// console.log(shoutedGreeting);
+// shoutedGreeting should be a capitalised version of the original greeting variable
 
-//   - Iterate over your ORIGINAL first name variable to achieve this and log to the console when complete
-
-// 3 - Log each character from your capitalised first name variable individually in reverse order
-
-for (let i=firstName.length-1;i>=0; i--){
-  let lettersinFirstNameCapital =firstName[i].toUpperCase();
-  
-console.log(lettersinFirstNameCapital);
+let alternateCaseGreeting = '';
+for (let i = 0; i < greeting.length; i++) {
+  alternateCaseGreeting += greeting[i].toUpperCase();
 }
-// 4 - Declare a new string variable and iterate over the sentence below adding each vowel to the end of your new variable and each consonant to the start (ignoring spaces)
+// console.log(alternateCaseGreeting);
+// alternateCaseGreeting should have every OTHER letter capitalised - HeLlO
 
-const sentence = 'the quick brown fox jumps over a lazy dog';
-const vowels = sentence.match(/[aeiou]/gi); 
-const consonants = sentence.match(/[^aeiou]/gi);   
-console.log(vowels)
+const sentence = 'sixty zippers were quickly picked from the woven jute bag';
+let vowels = '';
+let consonants = '';
 
- console.log(consonants)
+for (let i = 0; i < sentence.length; i++) {
+vowels = sentence.match(/[aeiou]/gi); 
+consonants = sentence.match(/[^aeiou]/gi);   
+}
+console.log(vowels);
+// This should log a string containing all of the vowels found in the sentence variable in the order they were found
+consonants = consonants.filter(s => s.replace(/\s+/g, '').length !== 0);
+ console.log(consonants);
+// This should log a string containing all of the consonants found in the sentence variable in the order they were found
+
+// Neither the vowels or consonants variables should contain any spaces
