@@ -20,7 +20,7 @@ return false;
     let positiveArray = arr.filter(num => num > -1);
    for (let i=0; i<positiveArray.lenth; i++){
     
-        sumArray=sumArray+positiveArray[i]
+        sumArray=sumArray+positiveArray[i];
      }
     return sumArray
   }
