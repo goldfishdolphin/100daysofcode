@@ -1,0 +1,20 @@
+Commands: This is where you tell the computer what to do. Some examples of commands include:
+
+- cd: change directory
+- open: open files
+- mv: move a file
+- mkdir: create a directory
+- top: list actively running computer processes
+- ditto: copy contents of folder to a new folder
+- pwd: present working dirctory
+- Up arrow : go back 1 level
+- cd .. : go 1 level back
+- Ctrl + a : go to the start at command line
+- Ctrl + e : go to the end at command line
+- Ctrl +u : Clear everything on command line
+- Option + click  where to go on command line
+- Autotab
+- touch : make new files
+- cp : copy files/directories
+- grep: get text with a particular text
+- echo: take text and put in a file
